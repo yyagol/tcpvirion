@@ -5,7 +5,7 @@ This simple tool will generate N tcp connections and will keep them alive
 by sending keepalive signals
 
 ```
-usage: tcpslowloris.py [-h] [-t TOTAL] [-p PULSE] [-d DELAY] [--target TARGET] [--port PORT]
+usage: tcpslowloris.py [-h] [-t TOTAL] [-p PULSE] [-d DELAY] [-i interval] [--target TARGET] [--port PORT]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -15,6 +15,8 @@ optional arguments:
                         Number of connections per pulse
   -d DELAY, --delay DELAY
                         Number of seconds betweek pulse
+  -i INTERVAL, --interval INTERVAL
+                        Keepalive interval , default 57s
   --target TARGET       Target host
   --port PORT           Target port
 ```
