@@ -1,4 +1,4 @@
-# tcpslowloris
+# tcpvirion
 TCP slowloris attack
 
 This simple tool will generate N tcp connections and will keep them alive
@@ -8,7 +8,7 @@ both are multi platform langs . in both cases , just download a simple file and 
 
 ## Using the python version :
 ```
-usage: tcpslowloris.py [-h] [-t TOTAL] [-p PULSE] [-d DELAY] [-i interval] [--target TARGET] [--port PORT]
+usage: tcpvirion.py [-h] [-t TOTAL] [-p PULSE] [-d DELAY] [-i interval] [--target TARGET] [--port PORT]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -24,13 +24,13 @@ optional arguments:
   --port PORT           Target port
 ```
 Example use :
->./tcpslowloris.py --target 192.168.0.1 --port 80 -t 100 -p 10 -d 5 
+>./tcpvirion.py --target 192.168.0.1 --port 80 -t 100 -p 10 -d 5 
 <p>
 
 ## Using the golang version :
  
  ```
-Usage of ./tcpslowloris:
+Usage of ./tcpvirion:
   -delay int
     	The keepalive delay in seconds (default 57)
   -interval int
@@ -45,7 +45,7 @@ Usage of ./tcpslowloris:
     	Total TCP sessions (default 10)
   ```
 Example command : 
->./tcpslowloris --target 192.168.0.1 --port 80 --pulse 2 --total 100 --delay 2 --interval 2
+>./tcpvirion --target 192.168.0.1 --port 80 --pulse 2 --total 100 --delay 2 --interval 2
 
 * Use on you own risk, this tool has no warrenty 
 
