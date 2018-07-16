@@ -6,7 +6,7 @@ by sending keepalive signals<br>
 It comes in 2 languages python and golang , choose whats best for you <br>
 both are multi platform langs . in both cases , just download a simple file and run
 
-Using the python version :
+## Using the python version :
 ```
 usage: tcpslowloris.py [-h] [-t TOTAL] [-p PULSE] [-d DELAY] [-i interval] [--target TARGET] [--port PORT]
 
@@ -26,7 +26,8 @@ optional arguments:
 Example use :
 >./tcpslowloris.py --target 192.168.0.1 --port 80 -t 100 -p 10 -d 5 
 <p>
-Using the golang version :
+
+## Using the golang version :
  
  ```
 Usage of ./tcpslowloris:
