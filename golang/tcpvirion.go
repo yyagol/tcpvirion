@@ -41,7 +41,10 @@ func main() {
 	}
 	time.Sleep(time.Duration(interval) * time.Second)
     }
-
+    fmt.Print("All threads are up, Ctrl+c to exit\n")
+    for {
+        time.Sleep(1 * time.Second)
+    }
     os.Exit(0)
 }
 func checkError(err error) {
